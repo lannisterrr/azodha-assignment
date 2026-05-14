@@ -1,0 +1,24 @@
+@import "./styles/tokens.css";
+@import "./styles/ui.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: var(--color-mint);
+}
+
+a:hover {
+  text-decoration: underline;
+}

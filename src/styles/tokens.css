@@ -1,0 +1,82 @@
+:root {
+  color-scheme: dark;
+
+  --font-display: "Syne", system-ui, sans-serif;
+  --font-body: "DM Sans", system-ui, sans-serif;
+
+  --color-bg-0: #07060b;
+  --color-bg-1: #0f0d18;
+  --color-bg-2: #16122a;
+  --color-glow-a: rgba(168, 85, 247, 0.35);
+  --color-glow-b: rgba(251, 113, 133, 0.22);
+  --color-glow-c: rgba(56, 189, 248, 0.12);
+
+  --color-surface: rgba(255, 255, 255, 0.05);
+  --color-surface-hover: rgba(255, 255, 255, 0.08);
+  --color-border: rgba(255, 255, 255, 0.1);
+  --color-border-strong: rgba(255, 255, 255, 0.18);
+
+  --color-text: #f8fafc;
+  --color-text-muted: #94a3b8;
+  --color-text-faint: #64748b;
+
+  --color-accent: #f472b6;
+  --color-accent-bright: #fb7185;
+  --color-accent-soft: rgba(244, 114, 182, 0.15);
+  --color-mint: #5eead4;
+  --color-danger: #f87171;
+  --color-danger-bg: rgba(248, 113, 113, 0.12);
+
+  --gradient-page: radial-gradient(900px 500px at 10% -10%, var(--color-glow-a), transparent 55%),
+    radial-gradient(700px 420px at 95% 5%, var(--color-glow-b), transparent 50%),
+    radial-gradient(600px 400px at 50% 100%, var(--color-glow-c), transparent 45%),
+    linear-gradient(165deg, var(--color-bg-1), var(--color-bg-0) 55%, #0a0814);
+
+  --gradient-primary: linear-gradient(
+    125deg,
+    #a855f7 0%,
+    #ec4899 45%,
+    #f97316 100%
+  );
+  --gradient-primary-hover: linear-gradient(
+    125deg,
+    #9333ea 0%,
+    #db2777 42%,
+    #ea580c 100%
+  );
+  --gradient-eyebrow: linear-gradient(90deg, #c4b5fd, #fbcfe8, #fdba74);
+
+  --shadow-card: 0 0 0 1px rgba(255, 255, 255, 0.06) inset,
+    0 24px 64px rgba(0, 0, 0, 0.55), 0 0 80px rgba(168, 85, 247, 0.08);
+  --shadow-glow-btn: 0 8px 28px rgba(236, 72, 153, 0.35);
+
+  --radius-xs: 6px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-full: 999px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.35rem;
+  --text-display: clamp(1.5rem, 4vw, 2rem);
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 140ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0ms;
+  }
+}
